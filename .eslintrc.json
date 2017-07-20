@@ -1,0 +1,9 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "linebreak-style": "off",
+        "quotes": ["warn", "double"],
+        "no-plusplus": "off",
+        "comma-dangle": "off"
+    }
+}

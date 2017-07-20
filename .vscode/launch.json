@@ -1,0 +1,38 @@
+{
+  // Use IntelliSense to learn about possible Node.js debug attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Chrome - launch",
+      "file": "${file}",
+      "webRoot": "${workspaceRoot}",
+      "userDataDir": "${workspaceRoot}/.chromedebug"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Node - launch",
+      "program": "${file}"
+    },
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Node - attach",
+      "address": "localhost",
+      "port": 5858
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full-Stack",
+      "configurations": [
+        "Node - launch",
+        "Chrome - launch"
+      ]
+    }
+  ]
+}
