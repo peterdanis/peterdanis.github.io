@@ -12,6 +12,7 @@ body {
   background-color: #e6e8eb;
   font-family: "Source Sans Pro";
   text-rendering: optimizeSpeed !important;
+  /* text-shadow: 2px 1px 3px #444444; */
 }
 
 /* Turning off decorations, e.g. underline for links */
@@ -21,6 +22,10 @@ body {
 
 .no-pad {
   padding: 0;
+}
+
+.no-margin {
+  margin: 0;
 }
 
 .icon-pad-right {
@@ -47,10 +52,40 @@ body {
   font-weight: 600;
 }
 
+.scaling-font {
+  font-size: calc(3rem + 1vw);
+  font-weight: 600;
+  line-height: calc(4rem + 1vw);
+}
+
 .page-bottom {
   position: fixed;
   right: 15px;
-  bottom: 1rem;
+  bottom: 1vh;
   left: 15px;
-  z-index: 1030;
+  z-index: 1000;
+}
+
+.pad-top {
+  padding-top: 15px;
+}
+
+.pad-right {
+  padding-right: 1vh;
+}
+
+.pad-left {
+  padding-left: 1vw;
+}
+
+.pad-30p-height {
+  padding-top: 30vh;
+}
+
+.center-h {
+  position: fixed;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
