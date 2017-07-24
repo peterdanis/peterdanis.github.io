@@ -1,0 +1,31 @@
+.hover-lines a::after {
+  content: "";
+  position: absolute;
+  top: calc(100%);
+  right: 0;
+  width: 0;
+}
+
+.hover-lines a::before {
+  content: "";
+  position: absolute;
+  bottom: calc(100%);
+  left: 0;
+  width: 0;
+}
+
+.hover-lines a:hover::after {
+  width: 100%;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  border-bottom: 2px solid #ffffff;
+}
+
+.hover-lines a:hover::before {
+  width: 100%;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  border-bottom: 2px solid #ffffff;
+}

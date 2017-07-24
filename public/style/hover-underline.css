@@ -1,0 +1,22 @@
+.hover-underline a {
+  text-decoration: none !important;
+  position: relative;
+  color: #ffffff;
+}
+
+.hover-underline a::after {
+  content: "";
+  position: absolute;
+  top: calc(100%);
+  left: 50%;
+  right: 50%;
+}
+
+.hover-underline a:hover::after {
+  left: 0;
+  right: 0;
+  transition-property: left, right;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  border-bottom: 2px solid #ffffff;
+}

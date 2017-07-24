@@ -1,7 +1,6 @@
 .card-custom {
   overflow: hidden;
   min-height: 450px;
-  border: 0;
   box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
 }
 
@@ -18,7 +17,7 @@
 .card-custom-img::after {
   position: absolute;
   content: '';
-  top: 161px;
+  top: 160px;
   left: 0;
   width: 0;
   height: 0;
@@ -42,31 +41,4 @@
   left: 1.25rem;
   width: 100px;
   height: 100px;
-}
-
-/* Wide variant for col-12 */
-.card-custom-wide {
-  overflow: hidden;
-  border: 0;
-  width: 100%;
-  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
-}
-
-.card-custom-wide-img {
-  height: 160px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-/* First left setting is a fallback */
-.card-custom-wide .card-custom-avatar img {
-  border-radius: 50%;
-  box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
-  position: absolute;
-  top: 20px;
-  left: 43.3%;
-  left: calc(50% - 75px);
-  width: 150px;
-  height: 150px;
 }

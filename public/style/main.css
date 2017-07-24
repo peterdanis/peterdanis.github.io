@@ -2,62 +2,50 @@
 html {
   width: 100%;
   height: 100%;
+  font-size: 14px;
 }
 
 /* Width and height are needed for some elements to work properly */
 body {
   width: 100%;
   height: 100%;
-  color: #000000;
-  background-color: #e6e8eb;
-  font-family: "Source Sans Pro";
-  text-rendering: optimizeSpeed !important;
-  /* text-shadow: 2px 1px 3px #444444; */
-}
-
-/* Turning off decorations, e.g. underline for links */
-.no-deco {
-  text-decoration: none !important;
-}
-
-.no-pad {
-  padding: 0;
-}
-
-.no-margin {
-  margin: 0;
-}
-
-.icon-pad-right {
-  padding-right: 0.3em;
-}
-
-.footer-text {
-  font-size: 0.8rem;
-}
-
-/* Copy to html and change url */
-.background {
-  background: url(https://placehold.it/1024x768);
+  font-family: "Open Sans";
+  color: #666666 !important;
+  background: url(../img/background.jpg);
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/* */
+.container {
+  height: 100%;
+}
+
+/* General section */
+.page-footer {
+  font-size: 12px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+}
+
+.background {
+  background: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   min-width: 100%;
   min-height: 100%;
-  z-index: -1;
-  position: absolute;
+  position: fixed;
   margin: 0;
   top: 0;
   left: 0;
   padding: 0;
   border: 0;
   animation: kenburns 110s infinite linear;
-}
-
-.big-font {
-  font-size: 4rem;
-  font-weight: 600;
 }
 
 .scaling-font {
@@ -74,22 +62,6 @@ body {
   z-index: 1000;
 }
 
-.pad-top {
-  padding-top: 15px;
-}
-
-.pad-right {
-  padding-right: 1vh;
-}
-
-.pad-left {
-  padding-left: 1vw;
-}
-
-.pad-30p-height {
-  padding-top: 30vh;
-}
-
 .center {
   position: fixed;
   margin: 0;
@@ -98,8 +70,9 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* Rotate is needed for IE, otherwise it is jumpy */
 @keyframes kenburns {
   50% {
-    transform: scale(1.3);
+    transform: scale(1.3) rotate(0.04deg);
   }
 }
