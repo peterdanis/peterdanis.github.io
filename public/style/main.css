@@ -98,8 +98,9 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/* Rotate is needed for IE, otherwise it is jumpy */
 @keyframes kenburns {
   50% {
-    transform: scale(1.3);
+    transform: scale(1.3) rotate(0.04deg);
   }
 }
