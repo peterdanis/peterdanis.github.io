@@ -18,9 +18,11 @@ body {
   background-position: center;
 }
 
-/* */
-.container {
-  height: 100%;
+#particles-id {
+  transition: all ease-out 0.4s;
+  transform: translate3d(0px, 0px, 0px);
+  transform-style: preserve-3d;
+  opacity: 1;
 }
 
 /* General section */
