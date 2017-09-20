@@ -20,12 +20,12 @@
     }
 
     .top-nav-collapse {
-      background-color: #424f95;
+      background: linear-gradient(40deg, #45cafc, #303f9f);
     }
 
     @media only screen and (max-width: 768px) {
       .navbar {
-        background-color: #424f95;
+        background: linear-gradient(40deg, #45cafc, #303f9f);
       }
     }
 
@@ -34,12 +34,22 @@
     }
 
     .hm-gradient .full-bg-img {
-            background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
-            background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
-            background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(29, 210, 177, 0.6)));
-            background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
-            background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%); 
-        }
+      background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+      background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+      background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(29, 210, 177, 0.6)));
+      background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+      background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+    }
+
+    .blue-gradient .full-bg-img {
+      background: -webkit-linear-gradient(50deg, #45cafc, #303f9f);
+      background: linear-gradient(40deg, rgba(69, 203, 252, 0.7), rgba(48, 65, 159, 0.7));
+    }
+
+    .page-footer {
+      background: linear-gradient(40deg, #45cafc, #303f9f);
+    }
+
   </style>
 </head>
 
@@ -71,18 +81,23 @@
   </header>
 
   <section id="aboutme">
-    <div class="view intro hm-gradient" style="">
-      <div class="full-bg-img flex-center">
-        <div class="container text-center white-text wow fadeInUp">
-          <div class="row">
-            <div class="col-6">
-              <h2>About me</h2>
+    <div class="view intro blue-gradient" style="">
+      <div class="full-bg-img">
+        <div class="container flex-center white-text ">
+          <div class="row flex-center">
+            <div class="col-8">
+              <h2 class="wow fadeInDown">About me</h2>
+              <hr class="white wow fadeInLeft">
+              <div class="wow fadeInUp">
+                <p align="justify">It will always stay visible on the top, even when you scroll down</p>
+                <p align="justify">Navbar's background will switch from transparent to solid color while scrolling down</p>
+                <br>
+                <p align="justify">Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
+              </div>
             </div>
-            <div class="col-6">
-              <h5>It will always stay visible on the top, even when you scroll down</h5>
-              <p>Navbar's background will switch from transparent to solid color while scrolling down</p>
-              <br>
-              <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
+            <div class="col-4">
+              <img src="./public/img/profile-photo.png" alt="" class="img-fluid rounded-circle wow fadeInRight" style="max-height: 200px;">
+
             </div>
           </div>
         </div>
@@ -121,7 +136,7 @@
   </section>
 
   <footer>
-    <div class="container-fluid page-footer unique-color">
+    <div class="container-fluid page-footer blue-gradient">
       <div class="row text-white">
         <div class="col-12 text-center">This site is using <a href="https://getbootstrap.com/">Bootstrap</a>, <a href="">Google</a> webfonts and <a href="">Font Awesome</a> icons
         </div>
