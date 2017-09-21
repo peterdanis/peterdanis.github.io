@@ -36,7 +36,7 @@ body {
   height: 280px;
   min-width: 200px;
   min-height: 280px;
-  background: url("../img/pexels-photo-546819.jpeg")no-repeat center center;
+  background: url("../img/pexels-photo-249798.jpg")no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -80,8 +80,13 @@ body {
 }
 
 .page-footer {
+  min-height: 30px;
   font-size: 12px;
   background: linear-gradient(40deg, #45cafc, #303f9f);
+}
+
+.page-footer a {
+  color: #ffffff;
 }
 
 /* Start as hidden, to reduce flicker */
@@ -114,4 +119,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
+}
+
+.card.card-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 }
