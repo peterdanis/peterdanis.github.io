@@ -28,10 +28,14 @@ body {
   background: url("../img/artem-sapegin-176819.jpg")no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  margin-bottom: 30px;
 }
 
 .intro2 {
-  min-height: 300px;
+  width: 200px;
+  height: 280px;
+  min-width: 200px;
+  min-height: 280px;
   background: url("../img/pexels-photo-546819.jpeg")no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
