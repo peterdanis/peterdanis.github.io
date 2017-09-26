@@ -2,6 +2,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: #222222;
+  color: #eeeeee;
 }
 
 /* .view {
@@ -80,9 +82,11 @@ body {
 }
 
 .page-footer {
-  min-height: 30px;
+  color: #aaaaaa;
+  min-height: 40px;
   font-size: 12px;
-  background: linear-gradient(40deg, #45cafc, #303f9f);
+  background-color: rgba(17, 17, 17, 0.7);
+  /* background: linear-gradient(40deg, #45cafc, #303f9f); */
 }
 
 .page-footer a {
@@ -99,7 +103,6 @@ body {
   flex-basis: 100%;
 } */
 
-.navbar.navbar-dark .breadcrumb .nav-item > .nav-link.active,
 .navbar.navbar-dark .navbar-nav .nav-item > .nav-link.active {
   background-color: rgba(255, 255, 255, 0.2);
 }

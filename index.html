@@ -13,6 +13,7 @@
 
 <body data-spy="scroll" data-target="#navbar" data-offset="50">
 
+  <!-- Navbar -->
   <header>
     <nav class="navbar fixed-top navbar-expand-sm navbar-dark scrolling-navbar">
       <div class="container smooth-scroll">
@@ -38,10 +39,12 @@
       </div>
     </nav>
   </header>
+  <!-- /Navbar -->
 
+  <!-- About me section -->
   <div id="aboutme" class="view intro blue-gradient">
     <div class="full-bg-img">
-      <div class="container white-text flex-center">
+      <div class="container flex-center">
         <div class="row flex-center">
           <div class="col-8">
             <h2 class="wow fadeInDown" data-wow-delay="0.3s">About me</h2>
@@ -60,15 +63,26 @@
       </div>
     </div>
   </div>
+  <!-- /About me section -->
 
+  <!-- Portfolio section -->
   <section id="portfolio">
 
     <div class="container pt-4">
-      <div class="row">
+      <div class="row flex-center">
+        <div class="col-12 col-md-6 col-lg-4 pb-3">
+          <h2 class="wow fadeInDown" data-wow-delay="0.3s">My work</h2>
+          <hr class="bg-white wow fadeInLeft" data-wow-delay="0.3s">
+          <div class="wow fadeInUp" data-wow-delay="0.3s">
+            <p align="justify">It will always stay visible on the top, even when you scroll down</p>
+            <p align="justify">Navbar's background will switch from transparent to solid color while scrolling down</p>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
-            <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4 pb-3">
+          <div class="card card-image wow fadeIn" data-wow-delay="0.3s" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+            <div class="text-center d-flex align-items-center rgba-bluegrey-strong py-5 px-4">
               <div>
                 <h5 class="green-text"><i class="fa fa-linode"></i> Node.js</h5>
                 <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
@@ -79,9 +93,9 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card card-image" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20(47).jpg');">
-            <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
+        <div class="col-12 col-md-6 col-lg-4 pb-3">
+          <div class="card card-image wow fadeIn" data-wow-delay="0.3s" style="background-image: url('https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20(47).jpg');">
+            <div class="text-white text-center d-flex align-items-center rgba-blue-strong py-5 px-4">
               <div>
                 <h5 class="green-text"><i class="fa fa-linode"></i> Node.js</h5>
                 <h3 class="card-title pt-2"><strong>This is card title</strong></h3>
@@ -92,8 +106,8 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="card card-image" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
+        <div class="col-12 col-md-6 col-lg-4 pb-3">
+          <div class="card card-image wow fadeIn" data-wow-delay="0.3s" style="background-image: url(https://mdbootstrap.com/img/Photos/Horizontal/Work/4-col/img%20%2814%29.jpg);">
             <div class="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">
               <div>
                 <h5 class="green-text"><i class="fa fa-linode"></i> Node.js</h5>
@@ -109,7 +123,9 @@
     </div>
 
   </section>
+  <!-- /Portfolio section -->
 
+  <!-- Highlights section -->
   <section id="highlights">
     <div class="container">
       <div class="container wow fadeIn">
@@ -130,22 +146,27 @@
       </div>
     </div>
   </section>
+  <!-- /Highlights section -->
 
+  <!-- Contact section -->
   <section id="contact">
     <div class="container">
     </div>
   </section>
+  <!-- /Contact section -->
 
+  <!-- Footer -->
   <footer>
-    <div class="container-fluid page-footer blue-gradient flex-center">
+    <div class="container-fluid page-footer flex-center">
       <div class="container">
-        <div class="row text-white">
+        <div class="row">
           <div class="col-12 text-center">This page was build by Peter Danis, with help of <a href="https://getbootstrap.com/">Bootstrap</a>, MDBootstrap, <a href="">Google</a> webfonts and <a href="">Font Awesome</a> icons
           </div>
         </div>
       </div>
     </div>
   </footer>
+  <!-- /Footer -->
 
   <!-- Noscript section for browsers with disabled javascript execution -->
   <noscript>
