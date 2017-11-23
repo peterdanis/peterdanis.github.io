@@ -2,11 +2,20 @@
   "name": "peterdanis.github.io",
   "version": "0.0.1",
   "license": "MIT",
-  "dependencies": {
+  "scripts": {
+    "start": "lite-server"
+  },
+  "dependencies": {},
+  "devDependencies": {
     "eslint": "*",
     "eslint-config-airbnb": "*",
     "eslint-plugin-import": "*",
     "eslint-plugin-jsx-a11y": "*",
-    "eslint-plugin-react": "*"
+    "eslint-plugin-react": "*",
+    "lite-server": "*",
+    "prettier-eslint": "*",
+    "prettier-stylelint": "*",
+    "stylelint": "*",
+    "stylelint-config-standard": "*"
   }
 }
